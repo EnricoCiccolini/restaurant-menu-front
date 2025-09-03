@@ -2,12 +2,12 @@
 
 function DettailCard({ plate }) {
 
-    const { name, image, id, description, allergens } = plate;
+    const { name, image, description, allergens } = plate;
 
     return (
         <>
-            <div className="card" style={{ maxWidth: "45rem" }}>
-                <img src={image} class="card-img-top" alt={name} />
+            <div className="card " style={{ maxWidth: "45rem" }}>
+                <img src={image} className="card-img-top img-dettail m-1" alt={name} />
                 <div className="card-body">
                     <p className="card-text">{description}</p>
                 </div>

@@ -8,7 +8,7 @@ function Header() {
             <header>
                 <nav className="navbar navbar-expand-lg bg-body-tertiary">
                     <div className="container-fluid">
-                        <NavLink className="navbar-brand" to="/">HOME</NavLink>
+                        <NavLink className="navbar-brand" to="/"><img src="navbar-logo.png" alt="navbar-logo" style={{ maxWidth: "3rem" }} /></NavLink>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>

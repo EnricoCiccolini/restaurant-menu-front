@@ -28,9 +28,12 @@ function PlateDettail() {
 
     return (
         <>
-            <h1>MenuPage</h1>
-            <div className="container row g-3">
-                {loading ? <p>Loading...</p> : <DettailCard key={data.id} plate={data} />}
+
+            <div className="container text-center text-white d-flex flex-column align-items-center justify-content-center m-3" >
+                <h1>{data.name}</h1>
+                <div className="container row g-3">
+                    {loading ? <p>Loading...</p> : <DettailCard key={data.id} plate={data} />}
+                </div>
             </div>
         </>
     )

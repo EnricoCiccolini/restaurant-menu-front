@@ -47,21 +47,22 @@ function MenuPage() {
     return (
         <>
 
-
-            <h1>MenuPage</h1>
-            {loading && courseLoading ? <p>Loading...</p> : courses.map(course => <button key={course.id} onClick={() => setAttualCourse(course)}>{course.name}</button>
-
-            )}
-
-            <div className="container row g-3">
-                {attualCourse ? <>
-                    <h2>{attualCourse.name}</h2>
-                    {loading && courseLoading ? <p>Loading...</p> : plates.filter((plate) => attualCourse ? plate.course.id === parseInt(attualCourse.id) : true).map(plate => <HomeCard key={plate.id} plate={plate} />
+            <div className="container text-center text-white d-flex flex-column align-items-center justify-content-center m-3" >
+                <img src="logo.png" alt="" style={{ maxWidth: "10rem" }} />
+                <div>
+                    {loading && courseLoading ? <p>Loading...</p> : courses.map(course => <button className="btn btn-outline-light m-2" key={course.id} onClick={() => setAttualCourse(course)}>{course.name}</button>
 
                     )}
-                </> : <h3>choice a course</h3>}
+                </div>
+                <div className="container row g-3">
+                    {attualCourse ? <>
+                        <h2>{attualCourse.name}</h2>
+                        {loading && courseLoading ? <p>Loading...</p> : plates.filter((plate) => attualCourse ? plate.course.id === parseInt(attualCourse.id) : true).map(plate => <HomeCard key={plate.id} plate={plate} />
 
+                        )}
+                    </> : <h3>choice a course</h3>}
 
+                </div>
             </div>
         </>
     )
