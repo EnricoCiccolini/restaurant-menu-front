@@ -25,3 +25,28 @@ body {
   padding: 0;
   font-family: Arial, sans-serif;
 }
+
+.home-btn:hover {
+  transform: scale(1.5);
+  transition: all 0.6s ease-in-out;
+
+}
+
+.dettail-btn {
+  background-color: #f0f0f0;
+  color: #333;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.308);
+}
+
+.dettail-btn:hover {
+  background-color: #333;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.308);
+}

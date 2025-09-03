@@ -11,7 +11,7 @@ function HomePage() {
                 <img src="https://resizer.otstatic.com/v3/photos/76291428-2?width=1280&height=720&webp=true" alt="restorant-inside" />
                 <h1>welcome to my restaurant </h1>
                 <h2>click on menu to see our dishes</h2>
-                <Link className="btn btn-outline-light" to="/menu">menu</Link>
+                <Link className="btn btn-outline-light home-btn" to="/menu">menu</Link>
 
 
 
